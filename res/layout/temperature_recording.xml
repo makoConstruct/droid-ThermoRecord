@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:mako = "http://schemas.android.com/apk/res/com.mako"
+	android:orientation="horizontal"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	>
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_height="match_parent"
+		android:layout_width="62dp"
+		android:gravity="bottom|center_horizontal"
+		>
+		<ZoomControls android:id = "@+id/zoomControl"
+			android:rotation="90"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:gravity="center_horizontal"
+			android:orientation="vertical" />
+		<com.mako.RecCheckButton android:id="@+id/recCheckButton"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" />
+	</LinearLayout>
+	<com.mako.TemperatureDataView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent" />
+	<!-- <com.mako.FrogListView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent" /> -->
+</LinearLayout>
+
